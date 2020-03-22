@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.creatures.Animal;
+import com.company.creatures.Human;
+import com.company.devices.Car;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -56,6 +60,10 @@ public class Main {
         System.out.println(me.getCar());
         System.out.println(hooman.getCar());
 
-        System.out.println("MAKE: " + hooman.getCar().make + " MODEL: " + hooman.getCar().model);
+        System.out.println(me);
+        System.out.println(hooman);
+
+        System.out.println(me.pet);
+
     }
 }

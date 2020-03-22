@@ -1,9 +1,9 @@
-package com.company;
+package com.company.creatures;
 
 import java.io.File;
 
 public class Animal {
-    final String species;
+    public final String species;
     private Double weight;
     public String name;
     private Boolean alive;
@@ -23,7 +23,7 @@ public class Animal {
         this.alive = true;
     }
 
-    boolean isAlive() {
+    public boolean isAlive() {
         if (this.weight > 0 && this.alive) {
             System.out.println("STATUS: Awesome :D");
             return true;
@@ -35,7 +35,7 @@ public class Animal {
         }
     }
 
-    void feed() {
+    public void feed() {
         System.out.print("<feed> ");
         if (this.alive) {
             weight++;
@@ -44,12 +44,16 @@ public class Animal {
         else System.out.println("Not gonna work...");
     }
 
-    void walk() {
+    public void walk() {
         System.out.print("<walk> ");
         if (this.alive) {
             weight--;
             System.out.println("been walkin, my weight is now " + this.weight);
         }
         else System.out.println("Walking Dead is so last decade...");
+    }
+
+    public String toString() {
+        return this.species + " " + this.name;
     }
 }
