@@ -22,6 +22,10 @@ public class Human {
         return car;
     }
 
+    public void shareCar(Car car) {
+        this.car = car;
+    }
+
     public void setCar(Car car) {
         if (car.price > (getSalary() * 5)) {
             System.out.println("YO MAMA SO POOR...");

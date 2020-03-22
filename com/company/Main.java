@@ -46,6 +46,16 @@ public class Main {
 
 //		System.out.println("Just bought a " + me.car.make + " " + me.car.model + " form " + me.car.year + " with a " + me.car.displacement + "cc " + me.car.engine + " engine.");
 
-        System.out.println("My salary is: " + me.getSalary());
+//        System.out.println("My salary is: " + me.getSalary());
+
+        Human hooman = new Human();
+        hooman.firstName = "Fname";
+        hooman.lastName = "Lname";
+        hooman.shareCar(me.getCar());
+
+        System.out.println(me.getCar());
+        System.out.println(hooman.getCar());
+
+        System.out.println("MAKE: " + hooman.getCar().make + " MODEL: " + hooman.getCar().model);
     }
 }
