@@ -42,7 +42,7 @@ public class Main {
 
         me.setSalary(10000.0);
 
-        me.setCar(new Car("Ferrari", "488 Spider", 2016, 3902, "V8"), 400000.0);
+        me.setCar(new Car("Ferrari", "488 Spider", 2016, 3902, "V8", 400000.0));
 
 //		System.out.println("Just bought a " + me.car.make + " " + me.car.model + " form " + me.car.year + " with a " + me.car.displacement + "cc " + me.car.engine + " engine.");
 

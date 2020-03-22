@@ -6,12 +6,14 @@ public class Car {
     public final Integer year;
     public final Integer displacement;
     public final String engine;
+    public Double price;
 
-    public Car(String make, String model, Integer year, Integer displacement, String engine) {
+    public Car(String make, String model, Integer year, Integer displacement, String engine, Double price) {
         this.make = make;
         this.model = model;
         this.year = year;
         this.displacement = displacement;
         this.engine = engine;
+        this.price = price;
     }
 }

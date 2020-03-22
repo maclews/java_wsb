@@ -22,10 +22,10 @@ public class Human {
         return car;
     }
 
-    public void setCar(Car car, Double price) {
-        if (price > (getSalary() * 5)) {
+    public void setCar(Car car) {
+        if (car.price > (getSalary() * 5)) {
             System.out.println("YO MAMA SO POOR...");
-        } else if (price > getSalary()) {
+        } else if (car.price > getSalary()) {
             System.out.println("Leasing is legal stealing...");
         } else {
             System.out.println("Make it rain - bought in cash");
