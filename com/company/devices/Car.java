@@ -1,23 +1,16 @@
 package com.company.devices;
 
-public class Car {
-    public final String make;
-    public final String model;
-    public final Integer year;
+public class Car extends Device {
     public final Integer displacement;
     public final String engine;
-    public Double price;
 
     public Car(String make, String model, Integer year, Integer displacement, String engine, Double price) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
+        super("car", make, model, year, price);
         this.displacement = displacement;
         this.engine = engine;
-        this.price = price;
     }
 
     public String toString() {
-        return this.make + " " + this.model + " (" + this.year + ")";
+        return this.getMake() + " " + this.getModel() + " (" + this.getYear() + ")";
     }
 }

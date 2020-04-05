@@ -33,9 +33,9 @@ public class Human extends Animal {
     }
 
     public void setCar(Car car) {
-        if (car.price > (getSalary() * 5)) {
+        if (car.getPrice() > (getSalary() * 5)) {
             System.out.println("YO MAMA SO POOR...");
-        } else if (car.price > getSalary()) {
+        } else if (car.getPrice() > getSalary()) {
             System.out.println("Leasing is legal stealing...");
         } else {
             System.out.println("Make it rain - bought in cash");
