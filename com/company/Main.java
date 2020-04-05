@@ -67,5 +67,7 @@ public class Main {
 
         System.out.println(me.species);
 
+        System.out.println(me.getWeight() + "kg");
+
     }
 }

@@ -23,6 +23,14 @@ public class Animal {
         this.alive = true;
     }
 
+    public Double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Double weight) {
+        this.weight = weight;
+    }
+
     public boolean isAlive() {
         if (this.weight > 0 && this.alive) {
             System.out.println("STATUS: Awesome :D");
