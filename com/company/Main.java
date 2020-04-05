@@ -14,7 +14,7 @@ public class Main {
         dog.feed();
         dog.feed();
 
-        Human me = new Human();
+        Human me = new Human("human");
         me.firstName = "Maciej";
         me.lastName = "Lewandowski";
         me.pet = new Animal("mouse");
@@ -52,7 +52,7 @@ public class Main {
 
 //        System.out.println("My salary is: " + me.getSalary());
 
-        Human hooman = new Human();
+        Human hooman = new Human("human");
         hooman.firstName = "Fname";
         hooman.lastName = "Lname";
         hooman.shareCar(me.getCar());
@@ -64,6 +64,8 @@ public class Main {
         System.out.println(hooman);
 
         System.out.println(me.pet);
+
+        System.out.println(me.species);
 
     }
 }
